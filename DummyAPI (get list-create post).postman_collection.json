@@ -1,0 +1,935 @@
+{
+	"info": {
+		"_postman_id": "95f17fd2-2dfb-4a91-a5f1-8a8626ddcc1f",
+		"name": "DummyAPI (get list/create post)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23559071"
+	},
+	"item": [
+		{
+			"name": "GetPostList",
+			"item": [
+				{
+					"name": "get/post(true)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/post",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get/post(false)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "created=0",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?created=0",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "created",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "page 0",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?page=0",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "page=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?page=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "page=999",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?page=999",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "999"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "page=1000",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?page=1000",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "page (no params)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "page (lat)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?page=ldh",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "ldh"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "limit=4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?limit=4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "limit=5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?limit=5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "limit=50",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?limit=50",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "50"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "limit=51",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?limit=51",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "51"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "limit (no params)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?limit=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "limit (lat)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?limit=lmr",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "lmr"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "created=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?created=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "created",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "created=2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?created=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "created",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "created (lat)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?created=lmt",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "created",
+									"value": "lmt"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "created (no params)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?created=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "created",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "create Post",
+			"item": [
+				{
+					"name": "text (length: 6-1000)",
+					"item": [
+						{
+							"name": "text (length: 6-1000) - 5 символов",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n\"likes\": 0,\r\n\"tags\": [\r\n\"animal\",\r\n\"dog\",\r\n\"golden retriever\"\r\n],\r\n\"text\": \"Puopf\",\r\n\"owner\": \"60d0fe4f5311236168a109ca\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/post/create",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"post",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "text (length: 6-1000) - 6 символов",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n\"likes\": 0,\r\n\"tags\": [\r\n\"animal\",\r\n\"dog\",\r\n\"golden retriever\"\r\n],\r\n\"text\": \"adului\",\r\n\"owner\": \"60d0fe4f5311236168a109ca\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/post/create",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"post",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "text (length: 6-1000) - 1000 символов",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n\"likes\": 0,\r\n\"tags\": [\r\n\"animal\",\r\n\"dog\",\r\n\"golden retriever\"\r\n],\r\n\"text\": \"hdhdgfhdgfhdgfhdgfhdgfhdgfhdfhdhfhdjfgfhdjhhfhffjgjgfkfkkdkdfjfjfdklnbsdkjnbskdjfnbsdkfn;sdlfnbs;dfnbs;dfnb;sdfknbs;dfnbs;dfnbs;dfnb;sdfnbs;dfnbs;dfnbs;dfnb;sfdnbs;fdnb;sdfnbs;dfbs;dfmb;sdfnb;sdfnb;aldfkbna;ldfknba;dlfnba;fdlbna;dfnba;fldknba;ldfknba;lfdknb;ldfbn;fdlbnd;bn;dfnb;adfbna;ldfbn,mvbbna;fdnba;egalkmaergalskgn;enga;lsknerhg;alkrga;n;dfnba;jfnbn'aldkfb;analskfnbana;lkb;adnb;alb;adnb;alkn;alfkbna;dkjnba;fnb;akjdnakdjnhdhdgfhdgfhdgfhdgfhdgfhdgfhdfhdhfhdjfgfhdjhhfhffjgjgfkfkkdkdfjfjfdklnbsdkjnbskdjfnbsdkfn;sdlfnbs;dfnbs;dfnb;sdfknbs;dfnbs;dfnbs;dfnb;sdfnbs;dfnbs;dfnbs;dfnb;sfdnbs;fdnb;sdfnbs;dfbs;dfmb;sdfnb;sdfnb;aldfkbna;ldfknba;dlfnba;fdlbna;dfnba;fldknba;ldfknba;lfdknb;ldfbn;fdlbnd;bn;dfnb;adfbna;ldfbn,mvbbna;fdnba;egalkmaergalskgn;enga;lsknerhg;alkrga;n;dfnba;jfnbn'aldkfb;analskfnbana;lkb;adnb;alb;adnb;alkn;alfkbna;dkjnba;fnb;akjdnakdjnhdhdgfhdgfhdgfhdgfhdgfhdgfhdfhdhfhdjfgfhdjhhfhffjgjgfkfkkdkdfjfjfdklnbsdkjnbskdjfnbsdkfn;sdlfnbs;dfnbs;dfnb;sdfknbs;dfnbs;dfnbs;dfnb;sdfnbs;df\",\r\n\"owner\": \"60d0fe4f5311236168a109ca\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/post/create",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"post",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "text (length: 6-1000) - 1001 символ",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n\"likes\": 0,\r\n\"tags\": [\r\n\"animal\",\r\n\"dog\",\r\n\"golden retriever\"\r\n],\r\n\"text\": \"hdhdgfhdgfhdgfhdgfhdgfhdgfhdfhdhfhdjfgfhdjhhfhffjgjgfkfkkdkdfjfjfdklnbsdkjnbskdjfnbsdkfn;sdlfnbs;dfnbs;dfnb;sdfknbs;dfnbs;dfnbs;dfnb;sdfnbs;dfnbs;dfnbs;dfnb;sfdnbs;fdnb;sdfnbs;dfbs;dfmb;sdfnb;sdfnb;aldfkbna;ldfknba;dlfnba;fdlbna;dfnba;fldknba;ldfknba;lfdknb;ldfbn;fdlbnd;bn;dfnb;adfbna;ldfbn,mvbbna;fdnba;egalkmaergalskgn;enga;lsknerhg;alkrga;n;dfnba;jfnbn'aldkfb;analskfnbana;lkb;adnb;alb;adnb;alkn;alfkbna;dkjnba;fnb;akjdnakdjnhdhdgfhdgfhdgfhdgfhdgfhdgfhdfhdhfhdjfgfhdjhhfhffjgjgfkfkkdkdfjfjfdklnbsdkjnbskdjfnbsdkfn;sdlfnbs;dfnbs;dfnb;sdfknbs;dfnbs;dfnbs;dfnb;sdfnbs;dfnbs;dfnbs;dfnb;sfdnbs;fdnb;sdfnbs;dfbs;dfmb;sdfnb;sdfnb;aldfkbna;ldfknba;dlfnba;fdlbna;dfnba;fldknba;ldfknba;lfdknb;ldfbn;fdlbnd;bn;dfnb;adfbna;ldfbn,mvbbna;fdnba;egalkmaergalskgn;enga;lsknerhg;alkrga;n;dfnba;jfnbn'aldkfb;analskfnbana;lkb;adnb;alb;adnb;alkn;alfkbna;dkjnba;fnb;akjdnakdjnhdhdgfhdgfhdgfhdgfhdgfhdgfhdfhdhfhdjfgfhdjhhfhffjgjgfkfkkdkdfjfjfdklnbsdkjnbskdjfnbsdkfn;sdlfnbs;dfnbs;dfnb;sdfknbs;dfnbs;dfnbs;dfnb;sdfnbs;dft\",\r\n\"owner\": \"60d0fe4f5311236168a109ca\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/post/create",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"post",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "text (length: 6-1000) - без текста",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n\"likes\": 0,\r\n\"tags\": [\r\n\"animal\",\r\n\"dog\",\r\n\"golden retriever\"\r\n],\r\n\"text\": \"\",\r\n\"owner\": \"60d0fe4f5311236168a109ca\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/post/create",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"post",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "text (length: 6-1000) - кириллица",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n\"likes\": 0,\r\n\"tags\": [\r\n\"animal\",\r\n\"dog\",\r\n\"golden retriever\"\r\n],\r\n\"text\": \"Василий Алибабаевич\",\r\n\"owner\": \"60d0fe4f5311236168a109ca\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/post/create",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"post",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "created (true) Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n\"likes\": 0,\r\n\"tags\": [\r\n\"animal\",\r\n\"dog\",\r\n\"golden retriever\"\r\n],\r\n\"text\": \"adult Labrador\",\r\n\"owner\": \"60d0fe4f5311236168a109ca\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/post/create",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"post",
+										"create"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "image",
+					"item": [
+						{
+							"name": "image есть URL",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n\"likes\": 0,\r\n\"tags\": [\r\n\"animal\",\r\n\"dog\",\r\n\"golden retriever\"\r\n],\r\n\"text\": \"adult Labrador\",\r\n\"owner\": \"60d0fe4f5311236168a109ca\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/post/create",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"post",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "image нет URL",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"image\": \"\",\r\n\"likes\": 0,\r\n\"tags\": [\r\n\"animal\",\r\n\"dog\",\r\n\"golden retriever\"\r\n],\r\n\"text\": \"adult Labrador\",\r\n\"owner\": \"60d0fe4f5311236168a109ca\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/post/create",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"post",
+										"create"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "likes (init value: 0)",
+					"item": [
+						{
+							"name": "likes (init value: 0) =0",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n\"likes\": 0,\r\n\"tags\": [\r\n\"animal\",\r\n\"dog\",\r\n\"golden retriever\"\r\n],\r\n\"text\": \"adult Labrador\",\r\n\"owner\": \"60d0fe4f5311236168a109ca\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/post/create",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"post",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "likes (init value: 0) = 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n\"likes\": 1,\r\n\"tags\": [\r\n\"animal\",\r\n\"dog\",\r\n\"golden retriever\"\r\n],\r\n\"text\": \"adult Labrador\",\r\n\"owner\": \"60d0fe4f5311236168a109ca\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/post/create",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"post",
+										"create"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "tags",
+					"item": [
+						{
+							"name": "tags = 3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n\"likes\": 0,\r\n\"tags\": [\r\n\"animal\",\r\n\"dog\",\r\n\"golden retriever\"\r\n],\r\n\"text\": \"adult Labrador\",\r\n\"owner\": \"60d0fe4f5311236168a109ca\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/post/create",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"post",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tags = 0",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n\"likes\": 0,\r\n\"tags\": \"\",\r\n\"text\": \"adult Labrador\",\r\n\"owner\": \"60d0fe4f5311236168a109ca\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/post/create",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"post",
+										"create"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "created (true)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n\"likes\": 0,\r\n\"tags\": [\r\n\"animal\",\r\n\"dog\",\r\n\"golden retriever\"\r\n],\r\n\"text\": \"adult Labrador\",\r\n\"owner\": \"60d0fe4f5311236168a109ca\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/post/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "created (false)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n\"likes\": 0,\r\n\"tags\": [\r\n\"animal\",\r\n\"dog\",\r\n\"golden retriever\"\r\n],\r\n\"text\": \"adult Labrador\",\r\n\"owner\": \"60d0fe4f5311236168a109ca\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/post/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{app-id}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "app-id",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

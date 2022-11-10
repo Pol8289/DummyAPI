@@ -1,0 +1,546 @@
+{
+	"info": {
+		"_postman_id": "3393bd33-fc63-4cb3-a776-83ec6b49a105",
+		"name": "DummyAPI (automatic)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23559071"
+	},
+	"item": [
+		{
+			"name": "status code 200",
+			"item": [
+				{
+					"name": "Get List (status code)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{app-id}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get List By User (status code)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{app-id}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/user/60d0fe4f5311236168a109ca/post",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"60d0fe4f5311236168a109ca",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get List By Tag (status code)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{app-id}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/tag/60d0fe4f5311236168a109ca/post",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"tag",
+								"60d0fe4f5311236168a109ca",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Post by id (status code)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{app-id}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post/6362280ecd21c6173e22adc4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post",
+								"6362280ecd21c6173e22adc4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Post (status code)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{app-id}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n        {\r\n            \"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n            \"likes\": 0,\r\n            \"tags\": [\r\n                \"animal\",\r\n                \"dog\",\r\n                \"golden retriever\"\r\n            ],\r\n            \"text\": \"adult Labrador\",\r\n            \r\n             \"owner\": \"60d0fe4f5311236168a109ca\"\r\n               \r\n            }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/post/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Post (status code)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{app-id}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n        {\r\n            \"id\": \"6362280ecd21c6e8ff22adca\",\r\n            \"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n            \"likes\": 0,\r\n            \"tags\": [\r\n                \"animal\",\r\n                \"dog\",\r\n                \"golden retriever\"\r\n            ],\r\n            \"link\": \"\",\r\n            \"text\": \"adult Labrador\",\r\n            \"publishDate\": \"2022-11-02T08:19:26.465Z\",\r\n            \"owner\": {\r\n                \"id\": \"60d0fe4f5311236168a109ca\",\r\n                \"title\": \"ms\",\r\n                \"firstName\": \"Sara\",\r\n                \"lastName\": \"Andersen\",\r\n                \"picture\": \"https://randomuser.me/api/portraits/women/58.jpg\"\r\n            }\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/post/6362280ecd21c6e8ff22adca",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post",
+								"6362280ecd21c6e8ff22adca"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Post (status code)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{app-id}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n        {\r\n            \"id\": \"6362280ecd21c6e8ff22adca\",\r\n            \"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n            \"likes\": 0,\r\n            \"tags\": [\r\n                \"animal\",\r\n                \"dog\",\r\n                \"golden retriever\"\r\n            ],\r\n            \"link\": \"\",\r\n            \"text\": \"adult Labrador\",\r\n            \"publishDate\": \"2022-11-02T08:19:26.465Z\",\r\n            \"owner\": {\r\n                \"id\": \"60d0fe4f5311236168a109ca\",\r\n                \"title\": \"ms\",\r\n                \"firstName\": \"Sara\",\r\n                \"lastName\": \"Andersen\",\r\n                \"picture\": \"https://randomuser.me/api/portraits/women/58.jpg\"\r\n            }\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/post/6362280ecd21c6173e22adc4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post",
+								"6362280ecd21c6173e22adc4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "JSON value chek",
+			"item": [
+				{
+					"name": "Create Post (JSON value chek)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"var jsonData = pm.response.json();\r",
+									" console.log (jsonData);\r",
+									"pm.test(\"chek likes\", function () {\r",
+									"    pm.expect(jsonData.likes).to.eql(0);\r",
+									"});\r",
+									"pm.test(\"chek image\", function () {\r",
+									"    pm.expect(jsonData.image).to.eql(\"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\");\r",
+									"pm.test(\"chek tags\", function () {\r",
+									"    pm.expect(jsonData.tags).to.eql([\"animal\",\r",
+									"        \"dog\",\r",
+									"        \"golden retriever\"]);\r",
+									"        pm.test(\"chtk text\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.text).to.eql(\"adult Labrador\");\r",
+									"});\r",
+									"});\r",
+									"});\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"owner\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.owner.id).to.eql(\"60d0fe4f5311236168a109ca\");\r",
+									"\r",
+									"    pm.collectionVariables.set(\"id\",jsonData.id);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{app-id}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n        {\r\n            \"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n            \"likes\": 0,\r\n            \"tags\": [\r\n                \"animal\",\r\n                \"dog\",\r\n                \"golden retriever\"\r\n            ],\r\n            \"text\": \"adult Labrador\",\r\n            \r\n             \"owner\": \"60d0fe4f5311236168a109ca\"\r\n               \r\n            }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/post/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Post (status code) Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Your test name\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.id).to.eql(pm.collectionVariables.get(\"id\"));\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{app-id}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n        {\r\n            \"id\": \"6362280ecd21c6e8ff22adca\",\r\n            \"image\": \"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg\",\r\n            \"likes\": 0,\r\n            \"tags\": [\r\n                \"animal\",\r\n                \"dog\",\r\n                \"golden retriever\"\r\n            ],\r\n            \"link\": \"\",\r\n            \"text\": \"adult Labrador\",\r\n            \"publishDate\": \"2022-11-02T08:19:26.465Z\",\r\n            \"owner\": {\r\n                \"id\": \"60d0fe4f5311236168a109ca\",\r\n                \"title\": \"ms\",\r\n                \"firstName\": \"Sara\",\r\n                \"lastName\": \"Andersen\",\r\n                \"picture\": \"https://randomuser.me/api/portraits/women/58.jpg\"\r\n            }\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/post/{{id}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{app-id}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "app-id",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": ""
+		}
+	]
+}
