@@ -16,6 +16,8 @@
    [Get list](getpost-get-list-1)
    
    [Create post](#postcreate-create-post-1)
+   
+5. [Коллекции](#коллекции-postman)    
 ## Описание проекта
 
 https://dummyapi.io 
